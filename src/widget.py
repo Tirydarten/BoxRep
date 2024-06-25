@@ -18,8 +18,10 @@ def mask_account_card(number: str) -> str:
 # print(mask_account_card("Счет 73654108430135874305"))
 
 def get_new_data(old_data: str) ->str:
+    """Функция принимает строку с датой
+     и выводит в формате dd.mm.yyyy"""
     data_slize = old_data[0:10].split("-")
     return ".".join(data_slize[::-1])
 
 
-print(get_new_data("2018-07-11T02:26:18.671407"))
+
